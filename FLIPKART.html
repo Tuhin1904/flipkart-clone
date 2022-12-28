@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuhin's e-commerce page</title>
+    <link rel="icon" href="tg.png.jpg" type="image/icon type">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+        :root {
+            --main-bg-color: #2874f0;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slider {
+            margin: 5px auto;
+            max-width: 80vw;
+            overflow: hidden;
+            border-radius: 30px;
+        }
+
+        header {
+            height: 9vh;
+            background-color: var(--main-bg-color);
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+        }
+
+        .logo img {
+            width: 90px;
+            margin: 0 0 0 10px;
+        }
+
+        nav ul {
+            /* height: 7vh; */
+            display: flex;
+            justify-content: flex-start;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 20px 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+
+        nav ul li a:hover {
+            /* color:blue */
+            font-weight: bold;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            width: 22vw;
+            height: 3vh;
+            border-radius: 2px;
+            margin: 0 10px 0 -10px;
+            padding: 5px 10px;
+        }
+
+        .container {
+            min-height: 83vh;
+        }
+
+        .card {
+            padding: 15px;
+            background-color: rgb(233, 229, 229);
+            width: 95vw;
+            margin: 5px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: 'Open Sans', sans-serif
+        }
+
+        .carditems {
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: center;
+            /* margin: 10px 25px 0 25px; */
+        }
+
+        .text-cent {
+            justify-content: center;
+            margin: 0px 35px;
+            align-items: center;
+            width: 10vw;
+        }
+
+        .card h3 {
+            font-family: 'Open Sans', sans-serif;
+            width: 10vw;
+            height: 14vh;
+        }
+
+        footer {
+            height: 10vh;
+            background-color: var(--main-bg-color);
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .text-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 4px 5px;
+            background-color: #2874f0;
+            color: white;
+            border-width: 2px;
+            border-radius: 5px;
+            border-color: white;
+            border-style: solid;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        .logo img{
+            /* width: 500px;s */
+        }
+    </style>
+    <style>
+        @media screen and (max-width:1000px){
+    *{
+        margin: 1px;
+        padding: 1px;
+    }
+    header{
+        height: 18vh;
+    }
+    header nav ul li{
+        margin: 10px auto;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        justify-content: center;
+        align-items: center;
+        margin: 1vh 42vw -1vh 4vw;
+    }
+    nav ul{
+        margin: 0px 40vw 1vh 19vw;
+        /* justify-content: cente; */
+        
+    }
+    .search{
+        margin: -3vh 38vw 0 0;
+    }
+    .search input{
+        height: 1.5vh;
+    }
+    .btn{
+        height: 3.5vh;
+    }
+    .btn h1{
+        font-size: 1%;
+    }
+    .container{
+        margin: 10px 0;
+    }
+    .slider{
+        height: 20vh;
+        max-width: 100vw;
+    }
+    .slider img{
+        width:100vw;
+    }
+    .items img{
+        width:110px;
+    }
+    .cards{
+        min-width:98vw;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="tuhincart.png"
+                    alt="flipkart logo">
+            </div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="Search here">
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main class="container">
+        <div class="slider">
+            <img src="https://source.unsplash.com/1600x500/?shopping, ecommerce" alt="">
+        </div>
+        <hr>
+        <div class="card">
+            <div class="items">
+                <h3 class="my-2">Welcome to gadgets gang</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?gadgets" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Electronics</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Eat healthy food now onwards</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?healthy food" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Food items</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Lets start to be fit this year</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?fitness,yoga" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Fitness kits</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Follow your favourite stars on every move!</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?celebrity" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Cloth brands</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Control the temperature around you</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?air conditioners" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Air Conditioners</p>
+                    <p class="text-cent">Min 10% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="items">
+                <h3 class="my-2">Capture every moment!</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?camera" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Cameras</p>
+                    <p class="text-cent">Min 15% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Add sweetness to your life</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?chocolates" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Chocolates</p>
+                    <p class="text-cent">Min 10% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Buy best quality furnitures</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?furnitures" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Furnitures</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Get best for your fur buddy</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?pets" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Pet accessories</p>
+                    <p class="text-cent">Min 30% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+            <div class="items">
+                <h3 class="my-2">Get toys for you kid</h3>
+                <div class="carditems">
+                    <img src="https://source.unsplash.com/160x160/?kids, toys" alt="">
+                </div>
+                <div class="lines">
+                    <p class="text-cent">Toys</p>
+                    <p class="text-cent">Min 10% off</p>
+                    <p class="text-cent">Get now !</p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <hr>
+    </main>
+    <footer class="text-center">
+        <p>Copyright &copy; TuhinCart.com </p>
+        <p> (Developed and maintained by Tuhin)</p>
+    </footer>
+</body>
+
+</html>
